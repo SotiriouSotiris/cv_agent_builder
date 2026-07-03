@@ -4,16 +4,16 @@ An evidence-first repository for interviewing a candidate, building a reusable c
 
 ## Getting started
 
-### 1. Clone the repository
+### 1. Clone the repository locally
 
 Install Git, then clone this repository and enter its directory:
 
 ```sh
-git clone <repository-url>
-cd cv_builder
+git clone https://github.com/SotiriouSotiris/cv_agent_builder.git
+cd cv_agent_builder
 ```
 
-Replace `<repository-url>` with the HTTPS or SSH URL for this repository.
+Work from this local copy. You do not need to fork the repository, create another GitHub repository, or push your personal files anywhere.
 
 ### 2. Open it with an AI coding agent
 
@@ -121,7 +121,11 @@ Both `generic_cv/` and `job_applications/` are retained in Git using placeholder
 
 ## Publishing safely
 
-Review `career_inventory.md` before making a fork public. Remove contact details, confidential employer information, or personal facts that should not be published.
+Keep your career information and generated applications local. Review `career_inventory.md` and generated files before changing ignore rules, publishing them, or pushing them to another repository. Remove contact details, confidential employer information, and personal facts that should not be disclosed.
+
+## Repository policy
+
+This public repository is provided as a read-only starting point for personal use. Clone it and work locally. Pull requests and external contributions are not accepted. The licence still permits use, modification, and redistribution under its terms.
 
 ## Licence
 
