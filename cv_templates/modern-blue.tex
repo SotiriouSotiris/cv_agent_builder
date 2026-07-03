@@ -1,0 +1,81 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=0.58in,bottom=0.62in,left=0.65in,right=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\fi
+\ifXeTeX
+  \XeTeXinterchartokenstate=1
+  \XeTeXcharclass`f=4094
+  \XeTeXcharclass`i=4095
+  \XeTeXcharclass`l=4095
+  \XeTeXinterchartoks 4094 4094 = {\kern0pt}
+  \XeTeXinterchartoks 4094 4095 = {\kern0pt}
+\fi
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{2457A7}
+\definecolor{body}{HTML}{263238}
+\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{colorlinks=true,urlcolor=accent,pdfauthor={Candidate Name},pdftitle={Candidate Name - Curriculum Vitae}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,topsep=3pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-3pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\newcommand{\role}[4]{%
+  {\large\bfseries #1}\hfill\textbf{#2}\par
+  {\color{accent}\textbf{#3}}\hfill\textit{#4}\par\vspace{-2pt}
+}
+
+\begin{document}
+\color{body}
+
+{\fontsize{25}{28}\selectfont\bfseries Candidate Name}\par
+\vspace{1pt}
+{\large\color{accent}Target Professional Title}\par
+\vspace{4pt}
+City, Country \enspace|\enspace
+\href{mailto:name@example.com}{name@example.com} \enspace|\enspace
+\href{https://www.linkedin.com/}{LinkedIn} \enspace|\enspace
+\href{https://portfolio.example.com/}{Portfolio}
+
+\section{Profile}
+Concise tailored summary connecting the candidate's verified identity and strongest evidence to the target role's highest-value needs.
+
+\section{Selected Impact}
+\begin{itemize}
+  \item Lead with the strongest verified outcome that directly addresses a core requirement.
+  \item Add a second high-value result demonstrating relevant scope, ownership, or technical depth.
+  \item Include a third item only when it contributes distinct evidence rather than repetition.
+\end{itemize}
+
+\section{Experience}
+\role{Official Job Title}{Month Year -- Present}{Organisation}{Location}
+\begin{itemize}
+  \item Explain a relevant responsibility with its technical or operational scope and confirmed result.
+  \item Describe an important decision, constraint, or collaboration boundary accurately.
+\end{itemize}
+
+\role{Previous Official Job Title}{Month Year -- Month Year}{Previous Organisation}{Location}
+\begin{itemize}
+  \item Select evidence that strengthens the target application without duplicating Selected Impact.
+\end{itemize}
+
+\section{Education}
+\textbf{Qualification and Subject}, Institution \hfill Month Year -- Month Year\par
+Relevant classification, dissertation, or award when confirmed and useful.
+
+\section{Skills}
+\textbf{Primary:} Most relevant confirmed skills.\par
+\textbf{Additional:} Supporting tools, platforms, methods, and spoken languages.
+
+\end{document}

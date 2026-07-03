@@ -1,0 +1,4 @@
+interface:
+  display_name: "CV Interview"
+  short_description: "Build a verified career inventory by interview"
+  default_prompt: "Use $cv-interview to interview me and complete career_inventory.md before we build a CV."

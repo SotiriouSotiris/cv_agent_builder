@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=0.5in,bottom=0.55in,left=0.6in,right=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\fi
+\ifXeTeX
+  \XeTeXinterchartokenstate=1
+  \XeTeXcharclass`f=4094
+  \XeTeXcharclass`i=4095
+  \XeTeXcharclass`l=4095
+  \XeTeXinterchartoks 4094 4094 = {\kern0pt}
+  \XeTeXinterchartoks 4094 4095 = {\kern0pt}
+\fi
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{00796B}
+\definecolor{text}{HTML}{243431}
+\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{colorlinks=true,urlcolor=accent,pdfauthor={Candidate Name},pdftitle={Candidate Name - Technical CV}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1.5pt,topsep=2.5pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{\MakeUppercase}[\vspace{-3pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\role}[4]{%
+  \textbf{#1} --- \textbf{#3}\hfill\textbf{#2}\par
+  \textit{#4}\par\vspace{-3pt}
+}
+
+\begin{document}
+\color{text}
+
+\begin{center}
+  {\fontsize{23}{26}\selectfont\bfseries Candidate Name}\par
+  {\large\color{accent}Software Engineering Focus}\par
+  \vspace{2pt}
+  \href{mailto:name@example.com}{name@example.com} \enspace|\enspace
+  \href{https://github.com/}{GitHub} \enspace|\enspace
+  \href{https://www.linkedin.com/}{LinkedIn} \enspace|\enspace City, Country
+\end{center}
+
+\section{Technical Summary}
+Two concise lines covering engineering focus, production scope, architecture or domain strengths, and the most relevant verified outcome.
+
+\section{Technical Skills}
+\textbf{Languages and frameworks:} Confirmed technologies ordered by job relevance.\par
+\textbf{Data and infrastructure:} Databases, cloud, deployment, observability, and security experience.\par
+\textbf{Engineering practice:} Testing, architecture, delivery, review, incident response, and collaboration methods.
+
+\section{Engineering Experience}
+\role{Official Engineering Title}{Month Year -- Present}{Organisation}{Location}
+\begin{itemize}
+  \item Designed or implemented a verified system, naming the scope, technical approach, and result.
+  \item Solved a difficult confirmed constraint involving scale, reliability, security, data integrity, or delivery.
+  \item Clarify personal ownership and collaboration boundaries for architecture, implementation, or operations.
+\end{itemize}
+
+\role{Previous Engineering Title}{Month Year -- Month Year}{Previous Organisation}{Location}
+\begin{itemize}
+  \item Add distinct evidence relevant to the vacancy, using confirmed technologies and outcomes only.
+\end{itemize}
+
+\section{Selected Projects}
+\textbf{Project or Product} \hfill \href{https://example.com/}{Human-readable link}\par
+State what the candidate personally built, the technical depth, its status, and verified adoption or outcome.
+
+\section{Education}
+\textbf{Qualification and Subject}, Institution \hfill Month Year -- Month Year\par
+Include a relevant dissertation, publication, module, or award when it materially strengthens the application.
+
+\end{document}

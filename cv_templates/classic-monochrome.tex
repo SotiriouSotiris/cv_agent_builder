@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\fi
+\ifXeTeX
+  \XeTeXinterchartokenstate=1
+  \XeTeXcharclass`f=4094
+  \XeTeXcharclass`i=4095
+  \XeTeXcharclass`l=4095
+  \XeTeXinterchartoks 4094 4094 = {\kern0pt}
+  \XeTeXinterchartoks 4094 4095 = {\kern0pt}
+\fi
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{muted}{HTML}{444444}
+\hypersetup{pdfauthor={Candidate Name},pdftitle={Candidate Name - Curriculum Vitae}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=2pt,topsep=3pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{-3pt}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+
+\newcommand{\role}[4]{%
+  \textbf{#1}\hfill\textbf{#2}\par
+  \textit{#3}\hfill\textit{#4}\par\vspace{-2pt}
+}
+
+\begin{document}
+\color{muted}
+
+\begin{center}
+  {\LARGE\bfseries Candidate Name}\par
+  \vspace{2pt}
+  Target Professional Title\par
+  \vspace{3pt}
+  City, Country \enspace|\enspace
+  \href{mailto:name@example.com}{name@example.com} \enspace|\enspace
+  \href{https://www.linkedin.com/}{LinkedIn} \enspace|\enspace
+  \href{https://github.com/}{GitHub}
+\end{center}
+
+\section{Profile}
+Two or three concise lines stating professional identity, strongest verified evidence, and relevant domain or technical focus.
+
+\section{Experience}
+\role{Official Job Title}{Month Year -- Present}{Organisation}{Location}
+\begin{itemize}
+  \item Delivered a relevant outcome by applying a confirmed skill within a clearly stated scope.
+  \item Owned a verified responsibility while accurately describing collaborators and constraints.
+  \item Improved a confirmed result; include a metric only when the candidate has verified it.
+\end{itemize}
+
+\role{Previous Official Job Title}{Month Year -- Month Year}{Previous Organisation}{Location}
+\begin{itemize}
+  \item Built or improved a relevant system, process, product, or service using confirmed experience.
+  \item Collaborated with the stated team or stakeholders without overstating personal ownership.
+\end{itemize}
+
+\section{Education}
+\role{Qualification and Subject}{Month Year -- Month Year}{Institution}{Location}
+Add a confirmed classification, relevant dissertation, or award only when useful.
+
+\section{Technical Skills}
+\textbf{Core:} Confirmed skills ordered by relevance to the vacancy.\par
+\textbf{Tools and platforms:} Verified technologies used professionally or in substantial projects.\par
+\textbf{Languages:} Confirmed spoken languages and proficiency levels.
+
+\end{document}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate Job CV"
+  short_description: "Create a verified CV for a specific job"
+  default_prompt: "Use $generate-job-cv to create a tailored CV for my job application directory."

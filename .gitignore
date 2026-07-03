@@ -1,0 +1,21 @@
+.DS_Store
+
+# Keep the CV directories, but do not commit their contents.
+/generic_cv/*
+!/generic_cv/.gitkeep
+/job_applications/*
+!/job_applications/.gitkeep
+!/job_applications/_template/
+!/job_applications/_template/job.md
+
+# LaTeX build artifacts (final PDFs remain trackable).
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.xdv
+
+/career_inventory.md

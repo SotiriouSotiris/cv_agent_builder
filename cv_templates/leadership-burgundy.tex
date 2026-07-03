@@ -1,0 +1,81 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=0.58in,bottom=0.62in,left=0.68in,right=0.68in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\fi
+\ifXeTeX
+  \XeTeXinterchartokenstate=1
+  \XeTeXcharclass`f=4094
+  \XeTeXcharclass`i=4095
+  \XeTeXcharclass`l=4095
+  \XeTeXinterchartoks 4094 4094 = {\kern0pt}
+  \XeTeXinterchartoks 4094 4095 = {\kern0pt}
+\fi
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{7A263A}
+\definecolor{text}{HTML}{2E292A}
+\hypersetup{colorlinks=true,urlcolor=accent,pdfauthor={Candidate Name},pdftitle={Candidate Name - Leadership CV}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=2pt,topsep=3pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-3pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+
+\newcommand{\role}[4]{%
+  {\large\bfseries #1}\hfill\textbf{#2}\par
+  \textit{#3}\hfill\textit{#4}\par\vspace{-2pt}
+}
+
+\begin{document}
+\color{text}
+
+\begin{center}
+  {\fontsize{24}{27}\selectfont\bfseries Candidate Name}\par
+  \vspace{1pt}
+  {\large\color{accent}Leadership or Senior Professional Focus}\par
+  \vspace{3pt}
+  City, Country \enspace|\enspace
+  \href{mailto:name@example.com}{name@example.com} \enspace|\enspace
+  \href{https://www.linkedin.com/}{LinkedIn}
+\end{center}
+
+\section{Leadership Profile}
+Summarise verified professional seniority, hands-on expertise, leadership scope, and the strongest relevant organisational or product outcome without inflating the official title.
+
+\section{Core Strengths}
+\textbf{Leadership:} Confirmed planning, mentoring, review, coordination, stakeholder, or delivery responsibilities.\par
+\textbf{Domain:} Relevant product, operational, commercial, or regulated-domain knowledge.\par
+\textbf{Technical:} Technologies and architecture skills that support the target leadership role.
+
+\section{Leadership Experience}
+\role{Official Job Title}{Month Year -- Present}{Organisation}{Location}
+\begin{itemize}
+  \item State the verified leadership responsibility, team or stakeholder scope, and resulting improvement.
+  \item Describe an important decision or initiative personally owned, including constraints and collaborators.
+  \item Show continued hands-on contribution where supported, particularly for technical leadership roles.
+\end{itemize}
+
+\role{Previous Official Job Title}{Month Year -- Month Year}{Previous Organisation}{Location}
+\begin{itemize}
+  \item Demonstrate progression through a distinct verified achievement, responsibility, or area of influence.
+  \item Preserve the official title while describing lead-like duties accurately in the bullet wording.
+\end{itemize}
+
+\section{Earlier Experience}
+\textbf{Earlier Official Title}, Organisation \hfill Month Year -- Month Year\par
+Use one concise line when earlier experience adds context but should not displace recent evidence.
+
+\section{Education and Development}
+\textbf{Qualification and Subject}, Institution \hfill Month Year -- Month Year\par
+Add relevant certifications, teaching, publications, or professional development when confirmed.
+
+\end{document}
