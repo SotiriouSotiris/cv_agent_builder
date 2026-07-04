@@ -106,8 +106,9 @@ Before delivery, confirm that:
 - Current and previous roles use the correct tense.
 - Official and unofficial titles are clearly distinguished.
 - Technology names are spelled consistently.
+- Names, employer names, dates, contact details, spelling, grammar, and punctuation have been proofread.
+- The employer's explicit application instructions and language conventions have been followed.
 - No bullet overstates personal ownership.
 - No planned feature reads as shipped.
 - The strongest evidence appears in the upper half of the first page.
 - The CV reads naturally aloud and does not sound generated or inflated.
-
