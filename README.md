@@ -72,6 +72,17 @@ Each option includes a self-contained `.tex` source and compiled PDF preview. Th
 
 Repository-wide agent behaviour is defined in `AGENTS.md`.
 
+## Evidence-based CV guidance
+
+Every generated CV follows the repository's accuracy and language rules together with [professional CV guidance](skills/generate-job-cv/references/professional-cv-guidance.md) synthesised from official resources published by:
+
+- The University of Oxford Careers Service
+- The UK National Careers Service
+- MIT Career Advising and Professional Development
+- Harvard's Mignone Center for Career Success
+
+The agent reads this guidance before drafting. It covers tailoring, evidence-based achievements, clear language, recruiter scanning, ATS-readable structure, market differences, and final PDF verification. These practices are informed defaults rather than a guarantee of interviews or hiring; explicit employer instructions take priority.
+
 ## Building the career inventory
 
 Ask an agent to use `$cv-interview`. The interview is a distinct first stage: its output is a complete, verified `career_inventory.md`, not a CV.
