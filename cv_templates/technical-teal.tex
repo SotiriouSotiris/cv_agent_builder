@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[a4paper,top=0.5in,bottom=0.55in,left=0.6in,right=0.6in]{geometry}
+\usepackage[a4paper,top=0.55in,bottom=0.6in,left=0.65in,right=0.65in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -27,6 +27,9 @@
 \hypersetup{colorlinks=true,urlcolor=accent,pdfauthor={Candidate Name},pdftitle={Candidate Name - Technical CV}}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 \setlist[itemize]{leftmargin=1.15em,itemsep=1.5pt,topsep=2.5pt}
 \titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{\MakeUppercase}[\vspace{-3pt}\color{accent}\titlerule]
 \titlespacing*{\section}{0pt}{7pt}{3pt}
@@ -38,12 +41,14 @@
 
 \begin{document}
 \color{text}
+\raggedright
 
 \begin{center}
   {\fontsize{23}{26}\selectfont\bfseries Candidate Name}\par
   {\large\color{accent}Software Engineering Focus}\par
   \vspace{2pt}
   \href{mailto:name@example.com}{name@example.com} \enspace|\enspace
+  \href{tel:+00000000000}{+00 000 000 000} \enspace|\enspace
   \href{https://github.com/}{GitHub} \enspace|\enspace
   \href{https://www.linkedin.com/}{LinkedIn} \enspace|\enspace City, Country
 \end{center}

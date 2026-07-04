@@ -40,7 +40,8 @@ cv_builder/
 │   │   └── references/question-bank.md
 │   └── generate-job-cv/
 │       ├── SKILL.md
-│       └── agents/openai.yaml
+│       ├── agents/openai.yaml
+│       └── references/professional-cv-guidance.md
 └── job_applications/
     ├── _template/job.md
     └── <user-provided-application-name>/
@@ -71,7 +72,8 @@ Before writing or revising any CV:
 4. Read `skills/cv-interview/SKILL.md` and resume the interview when facts are missing, ambiguous, outdated, or the user requests an interview.
 5. Inspect any supplied CV or links before asking questions they may already answer, without storing persistent copies.
 6. For a job-specific CV, read and follow `skills/generate-job-cv/SKILL.md` completely.
-7. Read `cv_templates/README.md`, ask the user to choose a template, then read the selected `.tex` file completely before drafting.
+7. Read `skills/generate-job-cv/references/professional-cv-guidance.md` completely.
+8. Read `cv_templates/README.md`, ask the user to choose a template, then read the selected `.tex` file completely before drafting.
 
 ## Career inventory rules
 

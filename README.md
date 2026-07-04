@@ -68,6 +68,7 @@ Each option includes a self-contained `.tex` source and compiled PDF preview. Th
 3. The candidate may provide old CVs, links, profiles, or other source material during the interview. The agent inspects them but does not create persistent copies.
 4. Once the inventory is complete, the agent can generate either a generic CV or use `skills/generate-job-cv/` for a specific job application.
 5. `cv-language.md` defines the writing and accuracy standard for both kinds of CV.
+6. `skills/generate-job-cv/references/professional-cv-guidance.md` summarises trusted official CV guidance used by the agent.
 
 Repository-wide agent behaviour is defined in `AGENTS.md`.
 

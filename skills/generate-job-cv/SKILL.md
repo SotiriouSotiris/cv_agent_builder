@@ -22,7 +22,8 @@ Read these files completely before selecting CV content:
 1. Repository-root `AGENTS.md`.
 2. Repository-root `career_inventory.md`.
 3. Repository-root `cv-language.md`.
-4. The application's `job.md`.
+4. `references/professional-cv-guidance.md` from this skill.
+5. The application's `job.md`.
 
 If `career_inventory.md` is missing or materially incomplete, use the repository's CV interview workflow before drafting. Inspect an existing application `cv.tex` or generic CV only as a layout reference; never treat it as a stronger factual source than the inventory.
 
@@ -72,7 +73,7 @@ Use the selected template as the structural and visual starting point. Do not co
 
 ## 6. Plan and write the LaTeX CV
 
-Read and apply every instruction in `cv-language.md`. Select the smallest set of evidence that presents the strongest truthful fit for the vacancy.
+Read and apply every instruction in `cv-language.md` and `references/professional-cv-guidance.md`. Select the smallest set of evidence that presents the strongest truthful fit for the vacancy.
 
 Prefer one page. Use two pages only when the additional relevant evidence materially improves the application. Use a single-column, ATS-readable layout with conventional headings, selectable text, visible human-readable contact labels, and working links.
 
